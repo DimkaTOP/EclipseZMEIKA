@@ -1,0 +1,116 @@
+import java.util.Scanner;
+
+
+	public class GameField {
+		private static final byte bPoleSize = 3;
+		private static final int PlayerNum = 0;
+		private static String[] pole = new String[bPoleSize*bPoleSize];
+		private static Object Integer;
+		private static byte bPlayerNum;
+		public static void   (String[] args) throws Exception {
+			int iTmp = 0;
+			Scanner sc = new Scanner(System.in);
+			
+			for (int i=0; i < bPoleSize*bPoleSize; i++)pole[i] = Integer.toString();
+			while (!isGameEnd1()) {
+				nextPlayer1();
+				while (true) {
+					String bPlayerNum = null;
+					System.out.println("\nХод игрока "+bPlayerNum);
+					showPole();
+					System.out.println("Наберите число куда хотите вставить "+(1==PlayerNum? "Крестик":"Нолик")+":");
+					if (sc.hasNextInt()) {
+						iTmp=sc.nextInt()-1;
+						if (isValidInput(iTmp)) break;
+					}
+					System.out.println("Вы ввели неправильное число. Повторите ввод");
+					sc.next();
+				}
+				try {
+					putX(iTmp);
+				} 
+				catch (Exception e) {
+					System.out.println("Что-то пошло не так :(");
+				}
+			}
+			showPole();
+		}
+		private static boolean isValidInput(int iTmp) {
+			// TODO Auto-generated method stub
+			return false;
+		}
+		private static boolean isValidlnput(int iln) {
+			if (iln >= bPoleSize*bPoleSize) return false;
+			if (iln < 0) return false;
+			switch (getX(iln)) {
+			case 'O':
+			case 'X':
+			return false;
+			}
+			return true;
+		}
+		private static void nextPlayer1() {
+			bPlayerNum = (byte)(1==bPlayerNum? 2:1);
+		}
+		private static boolean isGameEnd1() {
+			int i,j = 0;
+			boolean bRowWin = false, bColWin = false;
+		for (i=0;i<bPoleSize;i++) {
+			bRowWin=true;
+			bColWin=true;
+			for (int j1 = 0;j1<bPoleSize-1;j1++) {
+				bRowWin &=(getXY(i,j).charAt(0)==getXY(i,j+1).charAt(0));
+				bColWin &=(getXY(j,i).charAt(0)==getXY(j,i+1).charAt(0));
+			}
+			if (bColWin ||bRowWin){
+				System.out.println("Победил игрок "+bPlayerNum);
+				return true;
+			}
+		}
+		bRowWin = true;
+		bColWin = true;
+		for (i=0; i<bPoleSize-1;i++) {
+			bRowWin &=(getXY(i,i).charAt(0)==getXY(i+1,i+1).charAt(0));
+			bColWin &=(getXY(i,bPoleSize-i-1).charAt(0)==getXY(i+1,bPoleSize-i-2).charAt(0));
+		}
+		if (bRowWin || bColWin) {
+			System.out.println("Победил игрок" + bPlayerNum);
+			return true;
+		}
+		for (i=0;i<bPoleSize*bPoleSize;i++) {
+			switch (getX(i)) {
+			case 'O':
+			case 'X':
+				break;
+				default:
+					return false;
+			}
+		}
+		if (bPoleSize*bPoleSize<=i) {
+			System.out.println("Ничья. Кончались ходы.");
+			return true;
+		}
+		return false;
+		}
+		private static String getXY(int x, int y) {
+			return pole[x*bPoleSize + y];
+		}
+		private static char getX(int x) {
+			return pole[x].charAt(0);
+		}
+		private static void putX(int x) {
+			pole[x]=1==bPlayerNum ?"X":"O";
+		}
+		private static void showPole() {
+			for (int i=0;i <bPoleSize;i++) {
+				for (int j=0;j<bPoleSize;j++) {
+					System.out.printf("%4s", getXY(i,j));
+				}
+				System.out.print("\n");
+			}
+		}
+	}
+		
+	
+
+

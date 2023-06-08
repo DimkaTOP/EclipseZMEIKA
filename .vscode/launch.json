@@ -1,0 +1,902 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "tre",
+            "request": "launch",
+            "mainClass": "tre",
+            "projectName": "3"
+        },
+        {
+            "type": "java",
+            "name": "ma",
+            "request": "launch",
+            "mainClass": "ma",
+            "projectName": "M"
+        },
+        {
+            "type": "java",
+            "name": "odin",
+            "request": "launch",
+            "mainClass": "odin",
+            "projectName": "ONE"
+        },
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ]
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ],
+            "externalConsole": true
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "prog",
+            "request": "launch",
+            "mainClass": "prog",
+            "projectName": "Blockir"
+        },
+        {
+            "type": "java",
+            "name": "calculator",
+            "request": "launch",
+            "mainClass": "calculator",
+            "projectName": "Calculator (2)"
+        },
+        {
+            "type": "java",
+            "name": "calculator(1)",
+            "request": "launch",
+            "mainClass": "calculator",
+            "projectName": "Calculator"
+        },
+        {
+            "type": "java",
+            "name": "EITEN",
+            "request": "launch",
+            "mainClass": "EITEN",
+            "projectName": "Eighteen18"
+        },
+        {
+            "type": "java",
+            "name": "ElEvEn",
+            "request": "launch",
+            "mainClass": "ElEvEn",
+            "projectName": "Eleven11"
+        },
+        {
+            "type": "java",
+            "name": "FallingRocksGame",
+            "request": "launch",
+            "mainClass": "FallingRocksGame",
+            "projectName": "FallingRocksGame"
+        },
+        {
+            "type": "java",
+            "name": "filterr",
+            "request": "launch",
+            "mainClass": "filterr",
+            "projectName": "Fou4"
+        },
+        {
+            "type": "java",
+            "name": "zaz",
+            "request": "launch",
+            "mainClass": "zaz",
+            "projectName": "Interface"
+        },
+        {
+            "type": "java",
+            "name": "zaz1",
+            "request": "launch",
+            "mainClass": "zaz1",
+            "projectName": "Interface"
+        },
+        {
+            "type": "java",
+            "name": "zaz2",
+            "request": "launch",
+            "mainClass": "zaz2",
+            "projectName": "Interface"
+        },
+        {
+            "type": "java",
+            "name": "mb",
+            "request": "launch",
+            "mainClass": "mb",
+            "projectName": "MorskoyBoy (2)"
+        },
+        {
+            "type": "java",
+            "name": "mb(1)",
+            "request": "launch",
+            "mainClass": "mb",
+            "projectName": "MorskoyBoy (3)"
+        },
+        {
+            "type": "java",
+            "name": "mb(2)",
+            "request": "launch",
+            "mainClass": "mb",
+            "projectName": "MorskoyBoy (5)"
+        },
+        {
+            "type": "java",
+            "name": "mb(3)",
+            "request": "launch",
+            "mainClass": "mb",
+            "projectName": "MorskoyBoy (6)"
+        },
+        {
+            "type": "java",
+            "name": "mb(4)",
+            "request": "launch",
+            "mainClass": "mb",
+            "projectName": "MorskoyBoy (7)"
+        },
+        {
+            "type": "java",
+            "name": "mb(5)",
+            "request": "launch",
+            "mainClass": "mb",
+            "projectName": "MorskoyBoy (8)"
+        },
+        {
+            "type": "java",
+            "name": "mb(6)",
+            "request": "launch",
+            "mainClass": "mb",
+            "projectName": "MorskoyBoy"
+        },
+        {
+            "type": "java",
+            "name": "NiNe",
+            "request": "launch",
+            "mainClass": "NiNe",
+            "projectName": "Nine9"
+        },
+        {
+            "type": "java",
+            "name": "nteen",
+            "request": "launch",
+            "mainClass": "nteen",
+            "projectName": "Nineteen19"
+        },
+        {
+            "type": "java",
+            "name": "BasseConvert",
+            "request": "launch",
+            "mainClass": "BasseConvert",
+            "projectName": "One(1)"
+        },
+        {
+            "type": "java",
+            "name": "z1",
+            "request": "launch",
+            "mainClass": "z1",
+            "projectName": "PrUgga"
+        },
+        {
+            "type": "java",
+            "name": "z10",
+            "request": "launch",
+            "mainClass": "z10",
+            "projectName": "PrUgga"
+        },
+        {
+            "type": "java",
+            "name": "z11",
+            "request": "launch",
+            "mainClass": "z11",
+            "projectName": "PrUgga"
+        },
+        {
+            "type": "java",
+            "name": "z13",
+            "request": "launch",
+            "mainClass": "z13",
+            "projectName": "PrUgga"
+        },
+        {
+            "type": "java",
+            "name": "z2",
+            "request": "launch",
+            "mainClass": "z2",
+            "projectName": "PrUgga"
+        },
+        {
+            "type": "java",
+            "name": "z3",
+            "request": "launch",
+            "mainClass": "z3",
+            "projectName": "PrUgga"
+        },
+        {
+            "type": "java",
+            "name": "z4",
+            "request": "launch",
+            "mainClass": "z4",
+            "projectName": "PrUgga"
+        },
+        {
+            "type": "java",
+            "name": "z5",
+            "request": "launch",
+            "mainClass": "z5",
+            "projectName": "PrUgga"
+        },
+        {
+            "type": "java",
+            "name": "z6",
+            "request": "launch",
+            "mainClass": "z6",
+            "projectName": "PrUgga"
+        },
+        {
+            "type": "java",
+            "name": "z7",
+            "request": "launch",
+            "mainClass": "z7",
+            "projectName": "PrUgga"
+        },
+        {
+            "type": "java",
+            "name": "z8",
+            "request": "launch",
+            "mainClass": "z8",
+            "projectName": "PrUgga"
+        },
+        {
+            "type": "java",
+            "name": "z9",
+            "request": "launch",
+            "mainClass": "z9",
+            "projectName": "PrUgga"
+        },
+        {
+            "type": "java",
+            "name": "UserPaSSWD",
+            "request": "launch",
+            "mainClass": "UserPaSSWD",
+            "projectName": "ProverkaPASSWD"
+        },
+        {
+            "type": "java",
+            "name": "SeVenTEEN",
+            "request": "launch",
+            "mainClass": "SeVenTEEN",
+            "projectName": "Seventeen17"
+        },
+        {
+            "type": "java",
+            "name": "SixTEEN",
+            "request": "launch",
+            "mainClass": "SixTEEN",
+            "projectName": "Sixteen16"
+        },
+        {
+            "type": "java",
+            "name": "TaN",
+            "request": "launch",
+            "mainClass": "TaN",
+            "projectName": "Tan10"
+        },
+        {
+            "type": "java",
+            "name": "ToInfinity",
+            "request": "launch",
+            "mainClass": "ToInfinity",
+            "projectName": "ToInfinity"
+        },
+        {
+            "type": "java",
+            "name": "User",
+            "request": "launch",
+            "mainClass": "User",
+            "projectName": "ToInfinity"
+        },
+        {
+            "type": "java",
+            "name": "User(1)",
+            "request": "launch",
+            "mainClass": "User",
+            "projectName": "Usser"
+        },
+        {
+            "type": "java",
+            "name": "ZADAN$BoxDemo",
+            "request": "launch",
+            "mainClass": "ZADAN$BoxDemo",
+            "projectName": "ZadanieQ"
+        },
+        {
+            "type": "java",
+            "name": "zq1",
+            "request": "launch",
+            "mainClass": "zq1",
+            "projectName": "ZadanieQ"
+        },
+        {
+            "type": "java",
+            "name": "GameWindow",
+            "request": "launch",
+            "mainClass": "automatDimen/Game.GameWindow",
+            "projectName": "automatDimen (2)"
+        },
+        {
+            "type": "java",
+            "name": "GameWindow(1)",
+            "request": "launch",
+            "mainClass": "automatDimen/Game.GameWindow",
+            "projectName": "automatDimen"
+        },
+        {
+            "type": "java",
+            "name": "Eit",
+            "request": "launch",
+            "mainClass": "eight.Eit",
+            "projectName": "eight"
+        },
+        {
+            "type": "java",
+            "name": "fif",
+            "request": "launch",
+            "mainClass": "fifteen15.fif",
+            "projectName": "fifteen15"
+        },
+        {
+            "type": "java",
+            "name": "fourteen",
+            "request": "launch",
+            "mainClass": "fourteen14.fourteen",
+            "projectName": "fourteen14"
+        },
+        {
+            "type": "java",
+            "name": "game",
+            "request": "launch",
+            "mainClass": "games/games.game",
+            "projectName": "games"
+        },
+        {
+            "type": "java",
+            "name": "User(2)",
+            "request": "launch",
+            "mainClass": "tree/lab1804.User",
+            "projectName": "lab1804"
+        },
+        {
+            "type": "java",
+            "name": "dopalnit",
+            "request": "launch",
+            "mainClass": "tree/lab1804.dopalnit",
+            "projectName": "lab1804"
+        },
+        {
+            "type": "java",
+            "name": "edd",
+            "request": "launch",
+            "mainClass": "tree/lab1804.edd",
+            "projectName": "lab1804"
+        },
+        {
+            "type": "java",
+            "name": "za4a",
+            "request": "launch",
+            "mainClass": "tree/lab1804.za4a",
+            "projectName": "lab1804"
+        },
+        {
+            "type": "java",
+            "name": "zad1804",
+            "request": "launch",
+            "mainClass": "tree/lab1804.zad1804",
+            "projectName": "lab1804"
+        },
+        {
+            "type": "java",
+            "name": "myAction2",
+            "request": "launch",
+            "mainClass": "lab5obr2/lab5obr2.myAction2",
+            "projectName": "lab5obr2"
+        },
+        {
+            "type": "java",
+            "name": "myAction2(1)",
+            "request": "launch",
+            "mainClass": "lab5obr3/lab5obr3.myAction2",
+            "projectName": "lab5obr3"
+        },
+        {
+            "type": "java",
+            "name": "myAction2(2)",
+            "request": "launch",
+            "mainClass": "lab5obr4/lab5obr4.myAction2",
+            "projectName": "lab5obr4"
+        },
+        {
+            "type": "java",
+            "name": "MyMenu",
+            "request": "launch",
+            "mainClass": "lab6grap1/lab6grap1.MyMenu",
+            "projectName": "lab6grap1"
+        },
+        {
+            "type": "java",
+            "name": "game(1)",
+            "request": "launch",
+            "mainClass": "labarotory8/labarotory8.game",
+            "projectName": "labarotory8 (2)"
+        },
+        {
+            "type": "java",
+            "name": "game(2)",
+            "request": "launch",
+            "mainClass": "labarotory8/labarotory8.game",
+            "projectName": "labarotory8 (3)"
+        },
+        {
+            "type": "java",
+            "name": "game(3)",
+            "request": "launch",
+            "mainClass": "labarotory8/labarotory8.game",
+            "projectName": "labarotory8 (4)"
+        },
+        {
+            "type": "java",
+            "name": "game(4)",
+            "request": "launch",
+            "mainClass": "labarotory8/labarotory8.game",
+            "projectName": "labarotory8 (5)"
+        },
+        {
+            "type": "java",
+            "name": "game(5)",
+            "request": "launch",
+            "mainClass": "labarotory8/labarotory8.game",
+            "projectName": "labarotory8 (6)"
+        },
+        {
+            "type": "java",
+            "name": "game(6)",
+            "request": "launch",
+            "mainClass": "labarotory8/labarotory8.game",
+            "projectName": "labarotory8"
+        },
+        {
+            "type": "java",
+            "name": "zad1",
+            "request": "launch",
+            "mainClass": "laba.zad1",
+            "projectName": "laba"
+        },
+        {
+            "type": "java",
+            "name": "zad2",
+            "request": "launch",
+            "mainClass": "laba.zad2",
+            "projectName": "laba"
+        },
+        {
+            "type": "java",
+            "name": "qwe",
+            "request": "launch",
+            "mainClass": "lesson20.qwe",
+            "projectName": "lesson20"
+        },
+        {
+            "type": "java",
+            "name": "palitra_mouse",
+            "request": "launch",
+            "mainClass": "mouse_package.palitra_mouse",
+            "projectName": "mouse"
+        },
+        {
+            "type": "java",
+            "name": "irb7",
+            "request": "launch",
+            "mainClass": "progekt7/progekt7.irb7",
+            "projectName": "progekt7"
+        },
+        {
+            "type": "java",
+            "name": "pio7",
+            "request": "launch",
+            "mainClass": "progekt7/progekt7.pio7",
+            "projectName": "progekt7"
+        },
+        {
+            "type": "java",
+            "name": "pro7",
+            "request": "launch",
+            "mainClass": "progekt7/progekt7.pro7",
+            "projectName": "progekt7"
+        },
+        {
+            "type": "java",
+            "name": "polt5",
+            "request": "launch",
+            "mainClass": "pz5lab/pz5lab.polt5",
+            "projectName": "pz5lab"
+        },
+        {
+            "type": "java",
+            "name": "Dim",
+            "request": "launch",
+            "mainClass": "qass.Dim",
+            "projectName": "qass"
+        },
+        {
+            "type": "java",
+            "name": "HeavyBox",
+            "request": "launch",
+            "mainClass": "qass.HeavyBox",
+            "projectName": "qass"
+        },
+        {
+            "type": "java",
+            "name": "Thre",
+            "request": "launch",
+            "mainClass": "qass.Thre",
+            "projectName": "qass"
+        },
+        {
+            "type": "java",
+            "name": "qasa1",
+            "request": "launch",
+            "mainClass": "qass.qasa1",
+            "projectName": "qass"
+        },
+        {
+            "type": "java",
+            "name": "zaq",
+            "request": "launch",
+            "mainClass": "qaz.zaq",
+            "projectName": "qaz"
+        },
+        {
+            "type": "java",
+            "name": "seven",
+            "request": "launch",
+            "mainClass": "seven.seven",
+            "projectName": "seven"
+        },
+        {
+            "type": "java",
+            "name": "siix",
+            "request": "launch",
+            "mainClass": "six.siix",
+            "projectName": "six (2)"
+        },
+        {
+            "type": "java",
+            "name": "siix(1)",
+            "request": "launch",
+            "mainClass": "six.siix",
+            "projectName": "six"
+        },
+        {
+            "type": "java",
+            "name": "thirteen",
+            "request": "launch",
+            "mainClass": "thirteen13.thirteen",
+            "projectName": "thirteen13"
+        },
+        {
+            "type": "java",
+            "name": "Sstringbuilder",
+            "request": "launch",
+            "mainClass": "three/three.Sstringbuilder",
+            "projectName": "three"
+        },
+        {
+            "type": "java",
+            "name": "twelve",
+            "request": "launch",
+            "mainClass": "twelve12.twelve",
+            "projectName": "twelve12"
+        },
+        {
+            "type": "java",
+            "name": "uroook2",
+            "request": "launch",
+            "mainClass": "ur2l/ur2l.uroook2",
+            "projectName": "ur2l"
+        },
+        {
+            "type": "java",
+            "name": "ur2",
+            "request": "launch",
+            "mainClass": "urok_2/urok_2.ur2",
+            "projectName": "urok_2"
+        },
+        {
+            "type": "java",
+            "name": "prog(1)",
+            "request": "launch",
+            "mainClass": "wpo.prog",
+            "projectName": "wpo"
+        },
+        {
+            "type": "java",
+            "name": "zf6",
+            "request": "launch",
+            "mainClass": "xf6/xf6.zf6",
+            "projectName": "xf6"
+        },
+        {
+            "type": "java",
+            "name": "JavaApplication8",
+            "request": "launch",
+            "mainClass": "z111/z111.JavaApplication8",
+            "projectName": "z111"
+        },
+        {
+            "type": "java",
+            "name": "matem",
+            "request": "launch",
+            "mainClass": "z112a/z112a.matem",
+            "projectName": "z112a"
+        },
+        {
+            "type": "java",
+            "name": "resh",
+            "request": "launch",
+            "mainClass": "z112b/z112b.resh",
+            "projectName": "z112b"
+        },
+        {
+            "type": "java",
+            "name": "javaapplication8",
+            "request": "launch",
+            "mainClass": "z113/z113.javaapplication8",
+            "projectName": "z113"
+        },
+        {
+            "type": "java",
+            "name": "javaapplication8(1)",
+            "request": "launch",
+            "mainClass": "z114/z114.javaapplication8",
+            "projectName": "z114"
+        },
+        {
+            "type": "java",
+            "name": "zadanie115",
+            "request": "launch",
+            "mainClass": "z115/z115.zadanie115",
+            "projectName": "z115"
+        },
+        {
+            "type": "java",
+            "name": "leptop8",
+            "request": "launch",
+            "mainClass": "z116/z116.leptop8",
+            "projectName": "z116"
+        },
+        {
+            "type": "java",
+            "name": "koreny",
+            "request": "launch",
+            "mainClass": "z117a/z117a.koreny",
+            "projectName": "z117a"
+        },
+        {
+            "type": "java",
+            "name": "kremniy",
+            "request": "launch",
+            "mainClass": "z117b/z117b.kremniy",
+            "projectName": "z117b"
+        },
+        {
+            "type": "java",
+            "name": "tcp",
+            "request": "launch",
+            "mainClass": "z117cc/z117cc.tcp",
+            "projectName": "z117cc"
+        },
+        {
+            "type": "java",
+            "name": "tiamp",
+            "request": "launch",
+            "mainClass": "z117d/z117d.tiamp",
+            "projectName": "z117d"
+        },
+        {
+            "type": "java",
+            "name": "zad2(1)",
+            "request": "launch",
+            "mainClass": "z2/z2.zad2",
+            "projectName": "z2"
+        },
+        {
+            "type": "java",
+            "name": "zad3",
+            "request": "launch",
+            "mainClass": "z3/z3.zad3",
+            "projectName": "z3"
+        },
+        {
+            "type": "java",
+            "name": "za4",
+            "request": "launch",
+            "mainClass": "z4/z4.za4",
+            "projectName": "z4"
+        },
+        {
+            "type": "java",
+            "name": "z6(1)",
+            "request": "launch",
+            "mainClass": "z6/z6.z6",
+            "projectName": "z6 (2)"
+        },
+        {
+            "type": "java",
+            "name": "myAction",
+            "request": "launch",
+            "mainClass": "zaLab5list/zaLab5list.myAction",
+            "projectName": "zaLab5list"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "zad1.Solution",
+            "projectName": "zad1"
+        },
+        {
+            "type": "java",
+            "name": "qw1",
+            "request": "launch",
+            "mainClass": "zad9.qw1",
+            "projectName": "zad9"
+        },
+        {
+            "type": "java",
+            "name": "zas3",
+            "request": "launch",
+            "mainClass": "zadan3i/zadan3i.zas3",
+            "projectName": "zadan3i"
+        },
+        {
+            "type": "java",
+            "name": "demo",
+            "request": "launch",
+            "mainClass": "zadan_dop.demo",
+            "projectName": "zadan_dop"
+        },
+        {
+            "type": "java",
+            "name": "zq3",
+            "request": "launch",
+            "mainClass": "zadanka3/zadanka3.zq3",
+            "projectName": "zadanka3"
+        },
+        {
+            "type": "java",
+            "name": "zadie4",
+            "request": "launch",
+            "mainClass": "zadka4/zadka4.zadie4",
+            "projectName": "zadka4"
+        },
+        {
+            "type": "java",
+            "name": "zads5",
+            "request": "launch",
+            "mainClass": "zas5/zas5.zads5",
+            "projectName": "zas5"
+        },
+        {
+            "type": "java",
+            "name": "zxg5",
+            "request": "launch",
+            "mainClass": "zfx5z/zfx5z.zxg5",
+            "projectName": "zfx5z"
+        },
+        {
+            "type": "java",
+            "name": "zadie2oop",
+            "request": "launch",
+            "mainClass": "zidi4/zidi4.zadie2oop",
+            "projectName": "zidi4"
+        },
+        {
+            "type": "java",
+            "name": "zidif5",
+            "request": "launch",
+            "mainClass": "zidi5/zidi5.zidif5",
+            "projectName": "zidi5"
+        },
+        {
+            "type": "java",
+            "name": "zi6",
+            "request": "launch",
+            "mainClass": "zidi6/zidi6.zi6",
+            "projectName": "zidi6"
+        },
+        {
+            "type": "java",
+            "name": "zmieka",
+            "request": "launch",
+            "mainClass": "zmieka.zmieka",
+            "projectName": "zmieka (2)"
+        },
+        {
+            "type": "java",
+            "name": "zmieka(1)",
+            "request": "launch",
+            "mainClass": "zmieka.zmieka",
+            "projectName": "zmieka (3)"
+        },
+        {
+            "type": "java",
+            "name": "zmieka(2)",
+            "request": "launch",
+            "mainClass": "zmieka.zmieka",
+            "projectName": "zmieka"
+        },
+        {
+            "type": "java",
+            "name": "saz",
+            "request": "launch",
+            "mainClass": "zxc.saz",
+            "projectName": "zxc"
+        },
+        {
+            "type": "java",
+            "name": "zcv4",
+            "request": "launch",
+            "mainClass": "zxs4/zxs4.zcv4",
+            "projectName": "zxs4"
+        },
+        {
+            "type": "java",
+            "name": "BubbleSort",
+            "request": "launch",
+            "mainClass": "Massive/zxz.BubbleSort",
+            "projectName": "zxz"
+        },
+        {
+            "type": "java",
+            "name": "BubbleSorter",
+            "request": "launch",
+            "mainClass": "Massive/zxz.BubbleSorter",
+            "projectName": "zxz"
+        },
+        {
+            "type": "java",
+            "name": "SelectionSort",
+            "request": "launch",
+            "mainClass": "Massive/zxz.SelectionSort",
+            "projectName": "zxz"
+        }
+    ]
+}

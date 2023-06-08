@@ -1,0 +1,103 @@
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Point;
+import java.awt.Rectangle;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.io.IOException;
+import javax.imageio.ImageIO;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class FallingRocksGame extends JFrame {
+
+    private static FallingRocksGame gameWindow;
+    private static Image background;
+    private static Image rock;
+    private static Image gameOver;
+    private static long lastFrameTime;
+    private static float rockY;
+    private static float rockX;
+    private static float rockV = 220;
+    private static int score = 0;
+    private static Font scoreFont = new Font("Arial", Font.BOLD, 10);
+
+    public static void main(String[] args) throws IOException {
+        background = ImageIO.read(FallingRocksGame.class.getResourceAsStream("back.jpg"));
+        rock = ImageIO.read(FallingRocksGame.class.getResourceAsStream("rock.png"));
+        gameOver = ImageIO.read(FallingRocksGame.class.getResourceAsStream("gams.png"));
+
+        gameWindow = new FallingRocksGame();
+        gameWindow.setSize(900, 600);
+        gameWindow.setResizable(false);
+        lastFrameTime = System.nanoTime();
+
+        gameWindow.setTitle("Falling Rocks Game");
+        gameWindow.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        gameWindow.setLocationRelativeTo(null);
+
+        GameField gameField = new GameField();
+        gameWindow.add(gameField);
+
+        gameWindow.setVisible(true);
+    }
+
+    public static void onRepaint(Graphics g) {
+        g.drawImage(background, 0, 0, null);
+
+        long currentTime = System.nanoTime();
+        float deltaTime = (currentTime - lastFrameTime) * 0.000000001f;
+        lastFrameTime = currentTime;
+
+        rockY = rockY + rockV * deltaTime;
+
+        g.drawImage(rock, (int) rockX, (int) rockY, null);
+
+        if (rockY > gameWindow.getHeight()) {
+            g.drawImage(gameOver, 120, 150, null);
+        }
+
+        g.setColor(Color.BLUE);
+        g.setFont(scoreFont);
+        g.drawString("Счет: " + score, 10, 23);
+    }
+
+    public static void increaseScore() {
+        score++;
+    }
+
+    private static class GameField extends JPanel {
+
+        private Rectangle rockRect;
+
+        public GameField() {
+            rockRect = new Rectangle((int) rockX, (int) rockY, rock.getWidth(null), rock.getHeight(null));
+
+            addMouseListener(new MouseAdapter() {
+                @Override
+                public void mouseClicked(MouseEvent e) {
+                    Point clickPoint = e.getPoint();
+                    if (rockRect.contains(clickPoint)) {
+                        increaseScore();
+                        rockY =0;
+                        rockX = (int) (Math.random() * (gameWindow.getWidth() - rock.getWidth(null)));
+                        rockRect.setLocation((int) rockX, (int) rockY);
+                    }
+                }
+            });
+        }
+
+        @Override
+        protected void paintComponent(Graphics g) {
+            super.paintComponent(g);
+
+            onRepaint(g);
+
+            rockRect.setLocation((int) rockX, (int) rockY);
+
+            repaint();
+        }
+    }
+}
